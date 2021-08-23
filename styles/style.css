@@ -1,0 +1,433 @@
+    * {
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    
+    html {
+        width: 100%;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        overflow-anchor: none;
+    }
+    /* VARIABLES */
+    
+     :root {
+        --main-color-navbg: #3663a7;
+        --main-color-sub: #aaaaaa;
+        --main-color-footer: #141414;
+        --main-color-btn: #5F8DD3;
+        --main-color-btnhover: #AFC6E9;
+    }
+    
+    body {
+        background-color: var(--main-color-sub);
+        width: 70%;
+        margin: auto;
+        padding: 0;
+        box-shadow: 0px 5px 10px black;
+    }
+    /* NAV */
+    
+    .navBarFlex {
+        position: sticky;
+        top: 0px;
+        z-index: 50;
+    }
+    
+    .navBarFlex nav {
+        background: var(--main-color-navbg);
+        display: inline-flex;
+        flex-flow: row wrap;
+        padding: 5px 20px 5px 20px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+    }
+    
+    .navLinks ul li {
+        display: inline-flex;
+        margin-right: 5px;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .navBoton {
+        color: white;
+        font-weight: bold;
+        background: var(--main-color-btn);
+        padding: 5px 15px 5px 15px;
+        border-radius: 25px;
+        transition: transform 0.3s;
+        font-size: 13pt;
+    }
+    
+    .navBoton:hover {
+        transform: scale(110%);
+        background: var(--main-color-btnhover);
+    }
+    
+    .imgLogo {
+        height: 60px;
+        transition: transform 0.3s;
+    }
+    
+    .imgLogo:hover {
+        transform: scale(105%);
+    }
+    /* AQUI EMPIEZA SECTION */
+    
+    .info {
+        background-color: white;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 1 auto;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .info h2 {
+        text-align: center;
+        padding: 15px;
+        width: 70%;
+        margin-top: 25px;
+    }
+    
+    .imgLocal {
+        width: 60%;
+        border-radius: 50px;
+        padding: 15px;
+        transition: transform 0.3s;
+    }
+    
+    .imgLocal:hover {
+        transform: scale(110%);
+    }
+    /* SOBRE NOSOTROS */
+    
+    .nosotros {
+        background-color: white;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        margin: 1 auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .itemContainer {
+        margin: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    
+    .item {
+        margin: 5px;
+        width: 30%;
+        padding: 10px;
+        background-color: var(--main-color-navbg);
+        border-radius: 25px;
+        color: white;
+        display: flex;
+        text-align: center;
+        flex-flow: column wrap;
+        align-items: center;
+        transition: transform 0.3s, background-color 0.3s;
+    }
+    
+    .item:hover {
+        transform: scale(105%);
+        background-color: var(--main-color-btn);
+    }
+    
+    .item h3 {
+        margin: 10px 0px 10px 0px;
+        font-size: 20pt;
+    }
+    
+    .item p {
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .iconNosotros {
+        width: 80px;
+        margin: 10px;
+    }
+    
+    .somos p {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 50px;
+        font-size: 20pt;
+    }
+    /* SERVICIOS */
+    
+    .galeriaContainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .itemGaleria {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding: 25px;
+        margin: 15px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.356);
+        width: 250px;
+        height: 350px;
+        transition: transform 0.3s;
+    }
+    
+    .itemGaleria:hover {
+        transform: translateY(-10px);
+    }
+    
+    .itemGaleria h2 {
+        text-transform: uppercase;
+        font-size: 18pt;
+    }
+    
+    .itemGaleria p {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .itemGaleria>img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: auto;
+    }
+    /* FOOTER */
+    
+    .footerMain {
+        background: var(--main-color-footer);
+        color: white;
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+    
+    .footerMain div {
+        text-align: center;
+        margin: auto;
+        padding: 15px;
+        margin-top: 25px;
+    }
+    
+    .footerMain div h2 {
+        text-align: center;
+        margin: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .footerBlocks {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    /* FOOTER INFO */
+    
+    .footerInfo {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-items: flex-start;
+    }
+    
+    .footerDireccion {
+        color: black;
+        background-color: white;
+        padding: 8px;
+        width: fit-content;
+        transition: transform 0.3s;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+    
+    .footerDireccion:hover {
+        transform: scale(110%);
+    }
+    /* FOOTER SOCIAL */
+    
+    .footerSocial {
+        display: flexbox;
+        flex-flow: row wrap;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .socialIcon {
+        margin-top: 10px;
+        height: 50px;
+        transition: transform 0.3s;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    
+    .socialIcon:hover {
+        transform: scale(110%);
+        background: var(--main-color-sub);
+    }
+    
+    @media only screen and (max-width:3000px) and (min-width:800px) {
+        /* BOTON WHATSAPP */
+        .whatsapp {
+            position: fixed;
+            bottom: 0px;
+            left: 50px;
+            z-index: 10;
+            padding: 15px;
+            transition: transform 0.3s, padding 0.3s;
+            border-radius: 25px 25px 0px 0px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .whatsapp a {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+        .whatsapp:hover {
+            transform: scale(110%);
+            padding-bottom: 30px;
+        }
+        .whatsapp>a>img {
+            height: 40px;
+        }
+        .subNav {
+            background: #444444;
+            color: white;
+            padding: 10px;
+            font-weight: lighter;
+            width: 100%;
+            margin: auto;
+            position: sticky;
+            top: 80px;
+            height: 50px;
+            z-index: 40;
+        }
+        .subNav h1 {
+            text-align: center;
+            font-size: 15pt;
+        }
+        .subNav h2 {
+            text-align: center;
+            font-size: 15pt;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .navBarFlex nav {
+            background: var(--main-color-navbg);
+            display: inline-flex;
+            flex-flow: row wrap;
+            padding: 5px 20px 5px 20px;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+        }
+        .imgLogo {
+            height: 40px;
+        }
+        .itemContainer {
+            margin: 20px;
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            justify-content: center;
+        }
+        .item {
+            margin: 5px;
+            width: 80%;
+            padding: 10px;
+            background-color: var(--main-color-navbg);
+            border-radius: 25px;
+            color: white;
+            display: flex;
+            text-align: center;
+            flex-flow: column wrap;
+            align-items: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .imgLocal {
+            width: 80%;
+            border-radius: 50px;
+            padding: 15px;
+        }
+        body {
+            background-color: var(--main-color-sub);
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            box-shadow: 0px 5px 10px black;
+        }
+        /* BOTON WHATSAPP */
+        .whatsapp {
+            position: fixed;
+            bottom: 25px;
+            left: 0px;
+            z-index: 10;
+            padding: 15px;
+            transition: transform 0.3s, padding 0.3s;
+            border-radius: 0px 25px 25px 0px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .whatsapp a {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+        .whatsapp:hover {
+            padding-left: 25px;
+        }
+        .whatsapp>a>img {
+            height: 40px;
+        }
+        .subNav {
+            background: #444444;
+            color: white;
+            padding: 10px;
+            font-weight: lighter;
+            width: 100%;
+            margin: auto;
+            position: sticky;
+            top: 100px;
+            height: 50px;
+            z-index: 40;
+        }
+        .subNav h1 {
+            text-align: center;
+            font-size: 12pt;
+        }
+        .subNav h2 {
+            text-align: center;
+            font-size: 15pt;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .navLinks>ul>:first-child {
+            display: none;
+        }
+    }
